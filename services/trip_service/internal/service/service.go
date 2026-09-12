@@ -25,5 +25,5 @@ func (s *service) CreateTrip(ctx context.Context, fare domain.RideFareModel) (*d
 		RideFare: fare,
 	}
 
-	return s.repo.CreateTrip(ctx, t)
+	return s.tripRepository.CreateTrip(ctx, t)
 }
